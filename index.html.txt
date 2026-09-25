@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header class="profile-card">
+            <div class="avatar">⚡</div>
+            <h1>Hey, I'm Tech Explorer</h1>
+            <p class="subtitle">Tinkering with C, Web, and Microcontrollers</p>
+        </header>
+
+        <section class="card">
+            <h2>🚀 Current Experiments</h2>
+            <ul class="project-list">
+                <li><strong>C & Systems:</strong> Learning memory management and system code</li>
+                <li><strong>ESP32 Hardware:</strong> Building Wi-Fi micro-servers</li>
+                <li><strong>Web Dev:</strong> Building and hosting my first live website</li>
+            </ul>
+        </section>
+
+        <section class="card text-center">
+            <h2>Interactive Test</h2>
+            <p>Click the button below to trigger a JavaScript event:</p>
+            <button id="action-btn" onclick="toggleStatus()">Check System Status</button>
+            <p id="status-msg" class="status-box"></p>
+        </section>
+
+        <footer>
+            <p>Built from scratch • Hosted on GitHub Pages</p>
+        </footer>
+    </main>
+
+    <script>
+        function toggleStatus() {
+            const msg = document.getElementById("status-msg");
+            if (msg.style.display === "block") {
+                msg.style.display = "none";
+            } else {
+                msg.innerText = "✅ Status: All systems online & ready to deploy!";
+                msg.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
